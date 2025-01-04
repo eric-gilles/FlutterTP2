@@ -106,7 +106,7 @@ class WeatherDetails extends StatelessWidget {
                       style: TextStyle(fontSize: 14, color: Colors.grey[700]),
                     ),
                     Text(
-                      '${weather.feelsLike}°C',
+                      '${weather.feelsLike.toStringAsFixed(1)}°C',
                       style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                   ],
