@@ -24,7 +24,7 @@ The weather is displayed in the form of cards for each day with the following in
 
 Also available online via the following [Appetize](https://appetize.io/) link:
 
-- [Weather App - Appetize](https://appetize.io/app/7zjz2z7)
+- [Weather App - Appetize](https://appetize.io/app/b_km7dibd7ult4kdzdktphdjhsaq)
 
 
 ## Prerequisites

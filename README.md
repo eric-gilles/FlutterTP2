@@ -49,11 +49,11 @@ La météo est affichée sous forme de cartes pour chaque jour avec les informat
 ## Accès en ligne
 
 Également disponible en ligne via les liens [Appetize](https://appetize.io/) suivants :
-- [Quiz App V2 - Appetize](https://appetize.io/app/7zjz2z7)
+- [Quiz App V2 - Appetize](https://appetize.io/app/b_ud5okbdylv5tnjglsrbsisd6ly)
 
-- [Quiz App V3 - Appetize](https://appetize.io/app/7zjz2z7)
+- [Quiz App V3 - Appetize](https://appetize.io/app/b_7g34ytjrsclldjqmabosxmxeni)
 
-- [Weather App - Appetize](https://appetize.io/app/7zjz2z7)
+- [Weather App - Appetize](https://appetize.io/app/b_km7dibd7ult4kdzdktphdjhsaq)
 
 ## Prérequis
 

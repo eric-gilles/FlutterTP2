@@ -19,7 +19,7 @@ This application offers the same features as the quiz application from [TP1](htt
 
 Also available online via the following [Appetize](https://appetize.io/) link:
 
-- [Quiz App V3 - Appetize](https://appetize.io/app/7zjz2z7)
+- [Quiz App V3 - Appetize](https://appetize.io/app/b_7g34ytjrsclldjqmabosxmxeni)
 
 
 ## Prerequisites
