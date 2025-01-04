@@ -123,19 +123,15 @@ class WeatherDetails extends StatelessWidget {
   /// et usage de FontAwesome pour des temps spécifiques (jour et nuit)
   Widget getIcon(weather){
     if (!['01d', '01n'].contains(weather.icon.toString())){
-      return Image.network(
-        weather.iconUrl,
-        width: 85,
-        height: 85,
-        errorBuilder: (context, error, stackTrace) =>
-            Icon(
-              Icons.cloud_off,
-              size: 85,
-              color: Colors.grey[400],
-            ),
+      return Icon(
+        UtilsService.getWeatherIcon(weather.icon),
+        size: 85,
+        color: Colors.blue,
       );
     }else{
-      var icon = weather.icon == "01d" ? FontAwesomeIcons.solidSun : FontAwesomeIcons.solidMoon;
+      var icon = weather.icon == "01d"
+          ? FontAwesomeIcons.solidSun
+          : FontAwesomeIcons.solidMoon;
       return Icon(
         icon,
         size: 85,

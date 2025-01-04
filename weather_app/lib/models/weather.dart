@@ -31,6 +31,5 @@ class Weather {
       date: DateTime.fromMillisecondsSinceEpoch(json['dt'] * 1000),
     );
   }
-
-  String get iconUrl => 'https://openweathermap.org/img/wn/$icon@2x.png';
+  // String get iconUrl => 'https://openweathermap.org/img/wn/$icon@2x.png';
 }

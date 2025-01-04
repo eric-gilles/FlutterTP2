@@ -120,15 +120,10 @@ class WeatherForecast extends StatelessWidget {
   /// Méthode pour obtenir l'icône météo
   Widget getIcon(Weather weather) {
     if (!['01d', '01n'].contains(weather.icon.toString())) {
-      return Image.network(
-        weather.iconUrl,
-        width: 50,
-        height: 50,
-        errorBuilder: (context, error, stackTrace) => Icon(
-          Icons.cloud_off,
-          size: 50,
-          color: Colors.grey[400],
-        ),
+      return Icon(
+        UtilsService.getWeatherIcon(weather.icon),
+        size: 40,
+        color: Colors.blue,
       );
     } else {
       var icon = weather.icon == "01d"
@@ -136,7 +131,7 @@ class WeatherForecast extends StatelessWidget {
           : FontAwesomeIcons.solidMoon;
       return Icon(
         icon,
-        size: 50,
+        size: 40,
         color: Colors.yellow[700],
       );
     }
