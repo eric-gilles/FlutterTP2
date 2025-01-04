@@ -42,6 +42,7 @@ class DataService {
 
     final result = jsonDecode(response.body);
     final List<Weather> forecast = [];
+
     // Get the list of weather forecasts and convert them to a Weather List
     for (var item in result['list']) {
       forecast.add(Weather.fromJson(item));
@@ -50,19 +51,31 @@ class DataService {
   }
 
   /// Get Forecast data for the next 5 days
-  /// It needs to have one Weather object per day
-  /// Today's weather musn't be included
+  /// It needs to have one Weather object per day at 12:00 PM (noon)
+  /// Today's weather must not be included
   Future<List<Weather>> getWeatherForecastByDay(City city) async {
     var forecast = await getWeatherForecastFromAPI(city);
     var today = DateTime.now().day;
     var forecastByDay = <Weather>[];
-    var currentDay = today;
 
+    // Group forecasts by day
+    var dailyForecasts = <int, List<Weather>>{};
     for (var weather in forecast) {
-      if (weather.date.day != currentDay) {
-        forecastByDay.add(weather);
-        currentDay = weather.date.day;
+      var day = weather.date.day;
+      if (day != today) {
+        dailyForecasts.putIfAbsent(day, () => []).add(weather);
       }
+    }
+
+    // Select the forecast closest to 12:00 PM (noon) for each day to display a day forecast
+    for (var day in dailyForecasts.keys) {
+      var closestToNoon = dailyForecasts[day]!.reduce((a, b) {
+        var targetTime = DateTime(a.date.year, a.date.month, a.date.day, 12, 0);
+        var aDiff = (a.date.difference(targetTime)).abs();
+        var bDiff = (b.date.difference(targetTime)).abs();
+        return aDiff < bDiff ? a : b;
+      });
+      forecastByDay.add(closestToNoon);
     }
 
     return forecastByDay;
