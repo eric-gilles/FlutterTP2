@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import 'package:weather_app/models/city.dart';
@@ -8,6 +9,7 @@ import 'package:weather_app/models/weather.dart';
 class DataService {
   String apiKey = dotenv.env['API_KEY'] ?? '';
   String apiURL = "https://api.openweathermap.org/data/2.5/";
+  String langFR = "fr_FR";
 
   /// Fetch city weather data from the API
   Future<City> getCityFromAPI(String cityName) async {
@@ -20,13 +22,14 @@ class DataService {
   }
 
   /// Fetch weather data from the API by city
-  Future<Weather> getWeatherFromAPI(City city) async {
-    return getWeatherFromAPIByCoordinates(city.latitude, city.longitude);
+  Future<Weather> getWeatherFromAPI(City city, BuildContext context) async {
+    return getWeatherFromAPIByCoordinates(context, city.latitude, city.longitude);
   }
 
   /// Fetch weather data from the API by coordinates
-  Future<Weather> getWeatherFromAPIByCoordinates(String latitude, String longitude) async {
-    var url = Uri.parse('$apiURL/weather?lat=$latitude&lon=$longitude&units=metric&lang=fr&appid=$apiKey');
+  Future<Weather> getWeatherFromAPIByCoordinates(BuildContext context, String latitude, String longitude) async {
+    var lang = Localizations.localeOf(context).toString() == langFR ? 'fr' : 'en';
+    var url = Uri.parse('$apiURL/weather?lat=$latitude&lon=$longitude&units=metric&lang=$lang&appid=$apiKey');
     var response = await http.get(url);
     _checkResponse(response);
 
@@ -35,8 +38,9 @@ class DataService {
   }
 
   /// Fetch weather forecast data from the API by city
-  Future<List<Weather>> getWeatherForecastFromAPI(City city) async {
-    var url = Uri.parse('$apiURL/forecast?lat=${city.latitude}&lon=${city.longitude}&units=metric&lang=fr&appid=$apiKey');
+  Future<List<Weather>> getWeatherForecastFromAPI(City city, BuildContext context) async {
+    var lang = Localizations.localeOf(context).toString() == langFR ? 'fr' : 'en';
+    var url = Uri.parse('$apiURL/forecast?lat=${city.latitude}&lon=${city.longitude}&units=metric&lang=$lang&appid=$apiKey');
     var response = await http.get(url);
     _checkResponse(response);
 
@@ -53,8 +57,8 @@ class DataService {
   /// Get Forecast data for the next 5 days
   /// It needs to have one Weather object per day at 12:00 PM (noon)
   /// Today's weather must not be included
-  Future<List<Weather>> getWeatherForecastByDay(City city) async {
-    var forecast = await getWeatherForecastFromAPI(city);
+  Future<List<Weather>> getWeatherForecastByDay(City city, BuildContext context) async {
+    var forecast = await getWeatherForecastFromAPI(city, context);
     var today = DateTime.now().day;
     var forecastByDay = <Weather>[];
 
