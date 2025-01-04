@@ -2,13 +2,13 @@
 
 This project is a Flutter application that displays a quiz with questions and answers. The user can choose between two answers (yes or no) for each question. The application displays the progression of the quiz, the score, and allows the user to restart the quiz.
 
-It's the second version of the quiz application of the [TP1](https://github.com/eric-gilles/FlutterTP1/quizz_app), using the `provider` package to manage the application state.
+It's the second version of the quiz application of the [TP1](https://github.com/eric-gilles/FlutterTP1/tree/main/quizz_app), using the `provider` package to manage the application state.
 
 ## Auteur 
 - **[Eric Gilles](https://github.com/eric-gilles)**
 
-## Quiz Application with Provider - [Quiz App V2](https://github.com/eric-gilles/FlutterTP2/quizz_app_v2)
-This application offers the same features as the quiz application from [TP1](https://github.com/eric-gilles/FlutterTP1/quizz_app), but uses the `provider` package to manage the application state:
+## Quiz Application with Provider - [Quiz App V2](https://github.com/eric-gilles/FlutterTP2/tree/main/quizz_app_v2)
+This application offers the same features as the quiz application from [TP1](https://github.com/eric-gilles/FlutterTP1/tree/main/quizz_app), but uses the `provider` package to manage the application state:
 - Display of questions
 - Choice of answer (yes or no)
 - Display of progress

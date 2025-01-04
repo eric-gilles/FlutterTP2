@@ -1,33 +1,37 @@
 # TP2 Flutter - UE HAI912I
 ## TP2 - Gestion d'état Avancée (Provider, BLoC), Futures& Streams, Themes & Styling, Assets, and Animations
 
-Ce projet contient trois applications développées en Flutter : une version de l'application de quiz du [TP1](https://github.com/eric-gilles/FlutterTP1) en utilisant le package `provider`, une une version de l'application de quiz du TP1 utilisant le package `bloc` et une application de météo utilisant l'API d'[OpenWeatherMap](https://openweathermap.org/).
-réalisées dans le cadre du TP2 Flutter du cours HAI912I - Développement mobile avancé, IOT et embarqué à l'Université de Montpellier.
+Ce projet contient trois applications développées en Flutter : 
+- une version de l'application de quiz du [TP1](https://github.com/eric-gilles/FlutterTP1) en utilisant le package `provider`
+- une version de l'application de quiz du [TP1](https://github.com/eric-gilles/FlutterTP1/tree/main/quizz_app) utilisant le package `bloc`
+- une application de météo utilisant l'API d'[OpenWeatherMap](https://openweathermap.org/)
+
+Ces applications ont été réalisées dans le cadre du TP2 Flutter du cours HAI912I - Développement mobile avancé, IOT et embarqué à l'Université de Montpellier.
 
 ## Auteur 
 - **[Eric Gilles](https://github.com/eric-gilles)**
 
 ## Applications
 
-### 1. Application de Quiz avec Provider - [Quiz App V2](https://github.com/eric-gilles/FlutterTP2/quiz_app_v2)
+### 1. Application de Quiz avec Provider - [Quiz App V2](https://github.com/eric-gilles/FlutterTP2/tree/main/quiz_app_v2)
 
-Cette application propose les mêmes fonctionnalités que l'application de quiz du TP1, mais utilise le package `provider` pour gérer l'état de l'application :
+Cette application propose les mêmes fonctionnalités que l'application de quiz du [TP1](https://github.com/eric-gilles/FlutterTP1/tree/main/quizz_app), mais utilise le package `provider` pour gérer l'état de l'application :
 - Affichage des questions
 - Choix de la réponse (oui ou non)
 - Affichage de la progression
 - Calcul et affichage du score
 - Possibilité de recommencer le quiz
 
-### 2. Application de Quiz avec BLoC - [Quiz App V3](https://github.com/eric-gilles/FlutterTP2/quiz_app_v3)
+### 2. Application de Quiz avec BLoC - [Quiz App V3](https://github.com/eric-gilles/FlutterTP2/tree/main/quiz_app_v3)
 
-Cette application propose les mêmes fonctionnalités que l'application de quiz du TP1, mais utilise le package `bloc` pour gérer l'état de l'application :
+Cette application propose les mêmes fonctionnalités que l'application de quiz du [TP1](https://github.com/eric-gilles/FlutterTP1/tree/main/quizz_app), mais utilise le package `bloc` pour gérer l'état de l'application :
 - Affichage des questions
 - Choix de la réponse (oui ou non)
 - Affichage de la progression
 - Calcul et affichage du score
 - Possibilité de recommencer le quiz
 
-### 3. Application de Météo - [Weather App](https://github.com/eric-gilles/FlutterTP2/weather_app)
+### 3. Application de Météo - [Weather App](https://github.com/eric-gilles/FlutterTP2/tree/main/weather_app)
 Cette application utilise l'API d'[OpenWeatherMap](https://openweathermap.org/) pour afficher la météo actuelle et les prévisions météorologiques d'une ville donnée :
 - Recherche de la météo pour une ville en entrant son nom
 - Affichage de la météo actuelle

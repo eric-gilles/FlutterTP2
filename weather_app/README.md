@@ -5,7 +5,7 @@ This project is a Flutter application that displays the current weather and weat
 ## Auteur 
 - **[Eric Gilles](https://github.com/eric-gilles)**
 
-## Application de Météo - [Weather App](https://github.com/eric-gilles/FlutterTP2/weather_app)
+## Application de Météo - [Weather App](https://github.com/eric-gilles/FlutterTP2/tree/main/weather_app)
 This application uses the [OpenWeatherMap](https://openweathermap.org/) API to display the current weather and weather forecast for a given city:
 - Search for the weather for a city by entering its name
 - Display of the current weather
