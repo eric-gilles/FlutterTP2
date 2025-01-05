@@ -6,7 +6,7 @@ import 'package:weather_app/data/models/weather.dart';
 import 'package:weather_app/presentation/screens/theme_manager.dart';
 import 'package:weather_app/presentation/screens/weather_details.dart';
 import 'package:weather_app/presentation/screens/weather_forecast.dart';
-import 'package:weather_app/service/data_service.dart';
+import 'package:weather_app/services/data_service.dart';
 
 class WeatherPage extends StatefulWidget {
   const WeatherPage({super.key});

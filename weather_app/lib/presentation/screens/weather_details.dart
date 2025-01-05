@@ -4,7 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:weather_app/data/models/city.dart';
 import 'package:weather_app/data/models/weather.dart';
-import 'package:weather_app/service/utils_service.dart';
+import 'package:weather_app/services/utils_service.dart';
 
 class WeatherDetails extends StatelessWidget {
   final City city;
