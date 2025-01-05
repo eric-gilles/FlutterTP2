@@ -47,6 +47,10 @@ Also available online via the following [Appetize](https://appetize.io/) link:
     ```bash
     flutter pub get
     ```
+4. Create a file named `.env` in the root directory of the project and add the following line with your OpenWeatherMap API key:
+    ```bash
+    API_KEY='YOUR_API_KEY_HERE'
+    ```
 ## Execution in command line
 
 To run the weather application, use the following command in the corresponding project directory:

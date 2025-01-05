@@ -74,6 +74,10 @@ La météo est affichée sous forme de cartes pour chaque jour avec les informat
     ```bash
     flutter pub get
     ```
+4. Pour l'application `weather_app`, créez un fichier nommé `.env` dans le répertoire racine du projet et ajoutez la ligne suivante avec votre clé [API OpenWeatherMap](https://home.openweathermap.org/api_keys) :
+    ```bash
+    API_KEY='VOTRE_CLE_API_ICI'
+    ```
 
 ## Exécution en ligne de commande
 
