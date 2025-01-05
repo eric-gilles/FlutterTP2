@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app_v2/model/question.dart';
-import 'package:quiz_app_v2/repository/question_repository.dart';
+import 'package:quiz_app_v2/data/model/question.dart';
+import 'package:quiz_app_v2/data/repository/question_repository.dart';
 
 class QuizProvider extends ChangeNotifier {
   late final QuestionRepository _questionRepository;

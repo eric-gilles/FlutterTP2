@@ -4,8 +4,8 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:provider/provider.dart';
 
-import 'package:weather_app/screens/theme_manager.dart';
-import 'package:weather_app/screens/weather_page.dart';
+import 'package:weather_app/presentation/screens/theme_manager.dart';
+import 'package:weather_app/presentation/screens/weather_page.dart';
 
 Future<void> main() async {
   await dotenv.load(fileName: '.env');

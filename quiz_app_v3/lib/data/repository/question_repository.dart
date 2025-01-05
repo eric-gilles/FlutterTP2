@@ -1,4 +1,4 @@
-import 'package:quiz_app_v3/model/question.dart';
+import 'package:quiz_app_v3/data/model/question.dart';
 
 class QuestionRepository {
   final List<Question> _questions = [

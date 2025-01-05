@@ -2,8 +2,8 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
-import 'package:weather_app/models/city.dart';
-import 'package:weather_app/models/weather.dart';
+import 'package:weather_app/data/models/city.dart';
+import 'package:weather_app/data/models/weather.dart';
 
 /// DataService class to fetch weather data from the OpenWeatherMap API
 class DataService {

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import 'package:weather_app/models/city.dart';
-import 'package:weather_app/models/weather.dart';
+import 'package:weather_app/data/models/city.dart';
+import 'package:weather_app/data/models/weather.dart';
 import 'package:weather_app/service/utils_service.dart';
 
 class WeatherDetails extends StatelessWidget {

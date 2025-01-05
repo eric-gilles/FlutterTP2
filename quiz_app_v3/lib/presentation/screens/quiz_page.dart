@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:quiz_app_v3/blocs/quiz_bloc.dart';
-import 'package:quiz_app_v3/blocs/quiz_event.dart';
-import 'package:quiz_app_v3/blocs/quiz_state.dart';
-import 'package:quiz_app_v3/repository/question_repository.dart';
+import 'package:quiz_app_v3/business_logic/blocs/quiz_bloc.dart';
+import 'package:quiz_app_v3/business_logic/events/quiz_event.dart';
+import 'package:quiz_app_v3/business_logic/states/quiz_state.dart';
+import 'package:quiz_app_v3/data/repository/question_repository.dart';
 
 class QuizPage extends StatelessWidget {
   final String title;

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'package:weather_app/models/city.dart';
-import 'package:weather_app/models/weather.dart';
-import 'package:weather_app/screens/theme_manager.dart';
-import 'package:weather_app/screens/weather_details.dart';
-import 'package:weather_app/screens/weather_forecast.dart';
+import 'package:weather_app/data/models/city.dart';
+import 'package:weather_app/data/models/weather.dart';
+import 'package:weather_app/presentation/screens/theme_manager.dart';
+import 'package:weather_app/presentation/screens/weather_details.dart';
+import 'package:weather_app/presentation/screens/weather_forecast.dart';
 import 'package:weather_app/service/data_service.dart';
 
 class WeatherPage extends StatefulWidget {

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:quiz_app_v2/provider/quiz_provider.dart';
-import 'package:quiz_app_v2/screens/quiz_home_page.dart';
-import 'package:quiz_app_v2/screens/quiz_page.dart';
-import 'package:quiz_app_v2/screens/quiz_result_page.dart';
+import 'package:quiz_app_v2/data/provider/quiz_provider.dart';
+import 'package:quiz_app_v2/presentation/screens/quiz_home_page.dart';
+import 'package:quiz_app_v2/presentation/screens/quiz_page.dart';
+import 'package:quiz_app_v2/presentation/screens/quiz_result_page.dart';
 
 void main() {
   runApp(
