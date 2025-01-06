@@ -41,7 +41,7 @@ Also available online via the following [Appetize](https://appetize.io/) link:
 
 2. Access the directory of the desired project:
     ```bash
-    cd FlutterTP1/weather_app/
+    cd FlutterTP2/weather_app/
     ```
 3. Install the dependencies:
     ```bash

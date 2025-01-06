@@ -37,7 +37,7 @@ Also available online via the following [Appetize](https://appetize.io/) link:
 
 2. Access the directory of the desired project:
     ```bash
-    cd FlutterTP1/quiz_app_v2/
+    cd FlutterTP2/quiz_app_v2/
     ```
 3. Install the dependencies:
     ```bash

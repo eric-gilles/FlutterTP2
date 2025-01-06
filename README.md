@@ -68,7 +68,7 @@ La météo est affichée sous forme de cartes pour chaque jour avec les informat
     ```
 2. Accédez au répertoire du projet souhaité :
     ```bash
-    cd FlutterTP1/[quiz_app_v2|quiz_app_v3|weather_app]
+    cd FlutterTP2/[quiz_app_v2|quiz_app_v3|weather_app]
     ```
 3. Installez les dépendances :
     ```bash
